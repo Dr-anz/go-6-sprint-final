@@ -22,7 +22,7 @@ func Convert(input string) (string, error) {
 	// если строка содержит только '.', '-' — считаем, что это Морзе
 	isMorse := true
 	for _, char := range input {
-		if char != '.' && char != '-' {
+		if char != '.' && char != '-' && char != ' ' {
 			isMorse = false
 			break
 		}
